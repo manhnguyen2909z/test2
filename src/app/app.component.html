@@ -1,0 +1,32 @@
+<div class="border border-indigo-600 size p-10 flex justify-center items-center " >
+    <div class=" grid grid-cols-10 gap-16">
+        <div class="col-span-4 ">
+            <img class="w-full" src="assets/cogheart (image).png" alt="">
+        </div>
+        <div class="col-span-6">
+            <div class="flex flex-col">
+                <div class="text-green-600 text-3xl pb-3 ml-3">SỚM MAI TRONG TRẺO</div>
+                <div class="text-green-600 text-2xl py-2 ml-3">Yên Hà</div>
+                <div class="flex items-center py-5 ml-3">
+                    <div *ngFor="let item of items" class="flex items-center pr-10">
+                        <i class="fa {{item.social}} text-3xl pr-2 text-green-600 " aria-hidden="true"></i>
+                        <div class="pr-3 text-green-600">{{item.numberitem}}</div>
+                    </div>
+                </div>
+    
+                <div class="pt-5">
+                    <div class="flex flex-wrap">
+                        <div *ngFor="let text of texts" class="mb-2">
+                            <div class="bg-green-600 py-1 px-4 text-white text-xl flex justify-center items-center rounded-lg cursor-pointer ml-3">{{text.text}}</div>    
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-end">
+                <img width="80" src="assets/Group 368.png " alt="">
+                <div class="text-green-600 mr-4 -mt-3 font-bold italic">Awread</div>
+            </div>
+        </div>
+    </div>
+</div>
